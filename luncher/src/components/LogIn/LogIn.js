@@ -1,5 +1,6 @@
 import React from 'react';
 import { withFormik, Form, Field } from "formik";
+import { Link } from 'react-router-dom';
 import * as Yup from "yup";
 import axios from 'axios';
 
@@ -19,6 +20,8 @@ const LogIn = ({ errors, touched }) => {
                 <div>
                     <button type='submit'>Log In</button>
                 </div>
+                <p>Don't Have an Account?</p>
+                <Link to='/'>SIGN-UP</Link>
             </Form>
         </div>
     );

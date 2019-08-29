@@ -3,6 +3,7 @@ import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
 import './SignUp.css';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const SignUp = ({ errors, touched }) => {
     return (
@@ -35,6 +36,7 @@ const SignUp = ({ errors, touched }) => {
                     <button type='submit'>Submit!</button>
                 </div>
                 <p>Already Have an Account?</p>
+                <Link to='/login'>SIGN-IN</Link>
             </Form>
         </div>
     );

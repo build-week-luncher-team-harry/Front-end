@@ -11,10 +11,13 @@ export default function TabNav() {
                     <NavLink to='/donate'>DONATE</NavLink>
                 </div>
                 <div className='tabs'>
+                    <NavLink to='/login'>LOG IN</NavLink>
+                </div>
+                <div className='tabs'>
                     <NavLink to='/admin'>ADMIN</NavLink>
                 </div>
                 <div className='tabs'>
-                    <NavLink to='/admin/add-school'>Add School</NavLink>
+                    <NavLink to='/admin/add-school'>ADD SCHOOL</NavLink>
                 </div>
             </div>
         </Menu>

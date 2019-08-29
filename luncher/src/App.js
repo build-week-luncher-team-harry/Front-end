@@ -10,6 +10,9 @@ function App() {
         <TabNav />
         <AppRouter />
       </div>
+      <div className='footer'>
+        
+      </div>
     </div>
   );
 }
