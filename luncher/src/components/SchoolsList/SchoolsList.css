@@ -1,0 +1,8 @@
+.schools-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    justify-content: space-around;
+    padding: 20px;
+}

@@ -1,0 +1,13 @@
+.school-card {
+    width: 305px;
+    margin: 40px;
+    border: 2px solid black;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.school-card img {
+    width: 300px;
+    align-self: center;
+}

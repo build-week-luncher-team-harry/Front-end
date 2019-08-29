@@ -1,14 +1,15 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header/Header';
 import TabNav from './components/TabNav/TabNav';
+import AppRouter from './components/AppRouter/AppRouter';
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <TabNav />
-      {/* <AppRouter /> */}
+      <div className='main-content'>
+        <TabNav />
+        <AppRouter />
+      </div>
     </div>
   );
 }
