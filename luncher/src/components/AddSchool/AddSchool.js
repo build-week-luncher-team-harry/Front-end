@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { withFormik, Form, Field } from "formik";
 import * as Yup from "yup";
 import './AddSchool.css'
+import axios from 'axios';
 
 const AddSchool = ({ errors, touched }) => {
     return (
@@ -108,7 +109,10 @@ const FormikAddSchoolForm = withFormik({
     }),
 
     handleSubmit(values) {
-        console.log(values);
+        axios.post('https://luncher-backend.herokuapp.com/api/admin/school', {values})
+            .then(res => {
+                console.log(res)
+            })
     }
 })(AddSchool)
 

@@ -14,7 +14,7 @@ export default function TabNav() {
                     <NavLink to='/admin'>ADMIN</NavLink>
                 </div>
                 <div className='tabs'>
-                    <NavLink to='/admin/manage'>Add School</NavLink>
+                    <NavLink to='/admin/add-school'>Add School</NavLink>
                 </div>
             </div>
         </Menu>
