@@ -8,19 +8,19 @@ export default function TabNav() {
         <Menu className='menu'>
             <div className='nav-links'>
                 <div className='tabs'>
-                    <NavLink to='/donate'>DONATE</NavLink>
-                </div>
-                <div className='tabs'>
                     <NavLink exact to='/'>SIGN UP</NavLink>
                 </div>
                 <div className='tabs'>
-                    <NavLink to='/login'>LOG IN</NavLink>
+                    <NavLink exact to='/login'>LOG IN</NavLink>
                 </div>
                 <div className='tabs'>
-                    <NavLink to='/admin'>ADMIN</NavLink>
+                    <NavLink to='/donate'>DONATE</NavLink>
                 </div>
                 <div className='tabs'>
-                    <NavLink to='/admin/add-school'>ADD SCHOOL</NavLink>
+                    <NavLink exact to='/admin'>ADMIN</NavLink>
+                </div>
+                <div className='tabs'>
+                    <NavLink exact to='/admin/add-school'>ADD SCHOOL</NavLink>
                 </div>
             </div>
         </Menu>
