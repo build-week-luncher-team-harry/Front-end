@@ -11,6 +11,9 @@ export default function TabNav() {
                     <NavLink to='/donate'>DONATE</NavLink>
                 </div>
                 <div className='tabs'>
+                    <NavLink exact to='/'>SIGN UP</NavLink>
+                </div>
+                <div className='tabs'>
                     <NavLink to='/login'>LOG IN</NavLink>
                 </div>
                 <div className='tabs'>

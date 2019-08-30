@@ -47,6 +47,7 @@ const FormikLogInForm = withFormik({
         axios.post('https://luncher-backend.herokuapp.com/api/login', {...user})
             .then(res => {
                 console.log(res)
+                localStorage.setItem('token', res.data.token)
             })
     }
 })(LogIn)
