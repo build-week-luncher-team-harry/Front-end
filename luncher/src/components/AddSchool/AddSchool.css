@@ -1,0 +1,22 @@
+.addSchool {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.school-form {
+    width: 30%;
+    padding: 20px;
+}
+
+.school-form:first-child .field {
+    border-radius: 5px;
+    height: 30px;;
+}
+
+.field {
+    width: 95%;
+    margin: 10px
+}
