@@ -3,9 +3,18 @@
     display: flex;
     height: 100vh;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.schools-header {
-    width: 100%;
-    margin-top: 10px;
+.schoolInfo {
+    background-color: green;
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.schoolName {
+    align-self: center;
 }

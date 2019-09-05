@@ -48,6 +48,7 @@ const FormikLogInForm = withFormik({
             .then(res => {
                 console.log(res)
                 localStorage.setItem('token', res.data.token)
+                localStorage.setItem('adminId', res.data.id)
             })
     }
 })(LogIn)

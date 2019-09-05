@@ -21,7 +21,7 @@ const SchoolsList = () => {
         <div className='schools-list'>
             <h1 className='schools-header'>Schools in Need</h1>
             {schools.map(school => <SchoolCard school={school} key={school.id}/>)}
-            <div className='jupa'></div>
+            <div className='spacer'></div>
         </div>
     )
 }
