@@ -116,6 +116,7 @@ const FormikAddSchoolForm = withFormik({
             })
             .then(res => {
                 console.log(res)
+                localStorage.setItem('schoolId', res.data.adminId)
             })
             .catch()
     }
