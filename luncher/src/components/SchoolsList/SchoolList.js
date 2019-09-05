@@ -9,16 +9,19 @@ const SchoolsList = () => {
     useEffect(() => {
         axios.get('https://luncher-backend.herokuapp.com/api/schools')
             .then (res => {
+                console.log(res)
                 setSchools(res.data)
             })
-            .catch()
+            .catch(console.log(res => {
+                console.log(res)
+            }))
     }, []);
 
     return (
         <div className='schools-list'>
             <h1 className='schools-header'>Schools in Need</h1>
             {schools.map(school => <SchoolCard school={school} key={school.id}/>)}
-            <div className='jupa'></div>
+            <div className='spacer'></div>
         </div>
     )
 }

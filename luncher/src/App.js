@@ -11,10 +11,13 @@ function App() {
         <AppRouter />
       </div>
       <div className='footer'>
-        
+        <p>&copy; Copyright</p>
       </div>
     </div>
   );
 }
 
 export default App;
+
+
+
