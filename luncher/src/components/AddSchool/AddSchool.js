@@ -112,11 +112,12 @@ const FormikAddSchoolForm = withFormik({
         axios.post('https://luncher-backend.herokuapp.com/api/admin/school', values, {
             headers: {
                 Authorization: localStorage.getItem('token')
-            }
-        })
+                }
+            })
             .then(res => {
                 console.log(res)
             })
+            .catch()
     }
 })(AddSchool)
 

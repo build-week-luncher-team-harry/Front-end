@@ -9,9 +9,12 @@ const SchoolsList = () => {
     useEffect(() => {
         axios.get('https://luncher-backend.herokuapp.com/api/schools')
             .then (res => {
+                console.log(res)
                 setSchools(res.data)
             })
-            .catch()
+            .catch(console.log(res => {
+                console.log(res)
+            }))
     }, []);
 
     return (
